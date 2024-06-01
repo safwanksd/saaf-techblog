@@ -1,0 +1,159 @@
+
+} */
+.main-heading {
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    
+}
+.caption1 {
+    font-size: 1.25rem; /* Adjust the font size as needed */
+    color: #FF5733; /* Custom color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    margin-top: 20px; /* Add space above the caption */
+}
+
+.row {
+    padding: 30px;
+}
+
+/* Defining colors */
+:root {
+    --primary-color: #1D2549; /* Dark blue */
+    --accent-color: #BDF347;  /* Bright green */
+    --background-color: #FFFFFF; /* White */
+    --text-color: #FFFFFF; /* White for text on dark background */
+    --text-color-2: #1D2549;
+    --heading-color: #BDF347; /* Bright green for headings */
+    --secondary-background-color: #F5F5F5; /* Light gray */
+    --highlight-color: #89CFF0; /* Light blue */
+    --text-color-3: #000105;
+
+}
+
+/* Global styles */
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--text-color-2);
+}
+
+.nav-link:hover {
+    color: var(--text-color-2);
+}
+
+/* Main Heading */
+.main-heading {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px 0;
+}
+
+.main-heading h1 {
+    font-size: 2.5em;
+}
+
+.main-heading .caption1 {
+    font-size: 1.2em;
+    color: var(--accent-color);
+}
+
+/* About Section */
+h2 {
+    color: var(--heading-color);
+}
+
+.container1 {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+    background-color: var(--secondary-background-color);
+    color: var(--primary-color);
+    border: none;
+}
+
+.card .card-title {
+    color: var(--text-color-3);
+}
+
+.card .btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.card .btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* Subscription Section */
+form .form-control {
+    border: 1px solid var(--primary-color);
+}
+
+form .btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+form .btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* Utility classes for spacing */
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+/* Additional styles for better visibility */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-nav .nav-link {
+    color: var(--highlight-color);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-color);
+}
+
+/* Sections with dark blue background */
+.section-primary {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 40px 0;
+}
+
+/* Light text on primary color background */
+.text-primary-bg {
+    color: var(--text-color);
+}
