@@ -157,3 +157,6 @@ form .btn-primary:hover {
 .text-primary-bg {
     color: var(--text-color);
 }
+.form-text{
+    color: grey;
+}

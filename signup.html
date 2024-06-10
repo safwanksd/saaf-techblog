@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Saaf Tech Blog</a>
+          <a class="navbar-brand" href="#">Saaf Tech Blog</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -48,26 +48,44 @@
           </div>
         </div>
       </nav>
-      
-    <!-- Main Content -->
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-md-8 offset-md-2 text-center">
-                <h1>About Saaf Tech Blog</h1>
-                <p class="lead">Your go-to resource for learning and exploring front-end technologies.</p>
-                <hr>
-                <p>Welcome to Saaf Tech Blog! We are dedicated to providing comprehensive tutorials, articles, and insights on front-end development technologies such as HTML, CSS, JavaScript, and popular frameworks like React, Angular, and more. Whether you're just starting out or looking to advance your skills, our blog offers valuable content to help you on your journey.</p>
-                <p>Our mission is to make learning front-end development accessible and enjoyable for everyone. We believe in the power of community and sharing knowledge to help each other grow and succeed in the ever-evolving world of web development.</p>
-                <h2>Our Team</h2>
-                <p>We are a group of passionate web developers and tech enthusiasts with years of experience in the industry. Our diverse backgrounds and expertise allow us to cover a wide range of topics and provide insights from different perspectives.</p>
-                <p>Thank you for visiting Saaf Tech Blog. We hope you find our content useful and inspiring. Happy coding!</p>
+
+      <div class="container">
+        <h2 class="mt-5">Signup</h2>
+        <form id="signupForm" onsubmit="return validateForm(event)">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" class="form-control" id="fullname" onkeyup="validateFullName()" required>
+                <span id="fullname-error" class="text-danger">Full Name can't be blank !!</span>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" onkeyup="validateName()" required>
+                <span id="username-error" class="text-danger">Username can't be blank !!</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" onkeyup="validateEmail()" required>
+                <span id="email-error" class="text-danger">Email error !!</span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" onkeyup="validatePassword()" required>
+                <span id="password-error" class="text-danger">Password error !!</span>
+            </div>
+            <div class="form-group">
+                <label for="repeat">Repeat Password</label>
+                <input type="password" class="form-control" id="repeat" onkeyup="validateRepeat()" required>
+                <span id="repeat-error" class="text-danger">Repeat password error !!</span>
+            </div>
+            <button id="submit" type="submit" class="btn btn-primary" style="margin-bottom: 20px;">Submit</button>
+            <span id="submit-error" class="text-danger"></span>
+        </form>
     </div>
+    <script src="signup.js"></script>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Saaf Tech Blog. All Rights Reserved.</p>
+    <footer class="bg-dark text-white text-center py-5" style="">
+        <p>&copy; 2024 Saaf Tech Blog</p>
     </footer>
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
